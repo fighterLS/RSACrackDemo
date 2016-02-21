@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CrackDemo.xcodeproj">
+      location = "self:/Users/lisai/Desktop/crackModel/CrackDemo/RSADemo.xcodeproj">
    </FileRef>
 </Workspace>

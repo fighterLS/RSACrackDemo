@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C26716721C608972008ADFFC"
-               BuildableName = "CrackDemo.app"
-               BlueprintName = "CrackDemo"
-               ReferencedContainer = "container:CrackDemo.xcodeproj">
+               BuildableName = "RSADemo.app"
+               BlueprintName = "RSADemo"
+               ReferencedContainer = "container:RSADemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C267168B1C608973008ADFFC"
-               BuildableName = "CrackDemoTests.xctest"
-               BlueprintName = "CrackDemoTests"
-               ReferencedContainer = "container:CrackDemo.xcodeproj">
+               BuildableName = "RSADemo.xctest"
+               BlueprintName = "RSADemoTests"
+               ReferencedContainer = "container:RSADemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C26716961C608973008ADFFC"
-               BuildableName = "CrackDemoUITests.xctest"
-               BlueprintName = "CrackDemoUITests"
-               ReferencedContainer = "container:CrackDemo.xcodeproj">
+               BuildableName = "RSADemo.xctest"
+               BlueprintName = "RSADemoUITests"
+               ReferencedContainer = "container:RSADemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C26716721C608972008ADFFC"
-            BuildableName = "CrackDemo.app"
-            BlueprintName = "CrackDemo"
-            ReferencedContainer = "container:CrackDemo.xcodeproj">
+            BuildableName = "RSADemo.app"
+            BlueprintName = "RSADemo"
+            ReferencedContainer = "container:RSADemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C26716721C608972008ADFFC"
-            BuildableName = "CrackDemo.app"
-            BlueprintName = "CrackDemo"
-            ReferencedContainer = "container:CrackDemo.xcodeproj">
+            BuildableName = "RSADemo.app"
+            BlueprintName = "RSADemo"
+            ReferencedContainer = "container:RSADemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C26716721C608972008ADFFC"
-            BuildableName = "CrackDemo.app"
-            BlueprintName = "CrackDemo"
-            ReferencedContainer = "container:CrackDemo.xcodeproj">
+            BuildableName = "RSADemo.app"
+            BlueprintName = "RSADemo"
+            ReferencedContainer = "container:RSADemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

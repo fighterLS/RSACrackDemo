@@ -15,6 +15,10 @@
 		C26716861C608972008ADFFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C26716841C608972008ADFFC /* LaunchScreen.storyboard */; };
 		C26716911C608973008ADFFC /* CrackDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C26716901C608973008ADFFC /* CrackDemoTests.m */; };
 		C267169C1C608973008ADFFC /* CrackDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C267169B1C608973008ADFFC /* CrackDemoUITests.m */; };
+		C289E3D91C79575200D00987 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C289E3D81C79575200D00987 /* RSAEncryptor.m */; };
+		C289E3DB1C79582100D00987 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C289E3DA1C79582100D00987 /* Security.framework */; };
+		C289E3DE1C795A6100D00987 /* p.p12 in Resources */ = {isa = PBXBuildFile; fileRef = C289E3DC1C795A6100D00987 /* p.p12 */; };
+		C289E3DF1C795A6100D00987 /* rsacert.der in Resources */ = {isa = PBXBuildFile; fileRef = C289E3DD1C795A6100D00987 /* rsacert.der */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C26716731C608972008ADFFC /* CrackDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrackDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26716731C608972008ADFFC /* RSADemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSADemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26716771C608972008ADFFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C26716791C608972008ADFFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C267167A1C608972008ADFFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,12 +49,17 @@
 		C26716821C608972008ADFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C26716851C608972008ADFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C26716871C608972008ADFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C267168C1C608973008ADFFC /* CrackDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrackDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C267168C1C608973008ADFFC /* RSADemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSADemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26716901C608973008ADFFC /* CrackDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrackDemoTests.m; sourceTree = "<group>"; };
 		C26716921C608973008ADFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C26716971C608973008ADFFC /* CrackDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrackDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26716971C608973008ADFFC /* RSADemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSADemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C267169B1C608973008ADFFC /* CrackDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrackDemoUITests.m; sourceTree = "<group>"; };
 		C267169D1C608973008ADFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C289E3D71C79575200D00987 /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
+		C289E3D81C79575200D00987 /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
+		C289E3DA1C79582100D00987 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C289E3DC1C795A6100D00987 /* p.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = p.p12; sourceTree = "<group>"; };
+		C289E3DD1C795A6100D00987 /* rsacert.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = rsacert.der; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C289E3DB1C79582100D00987 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,7 @@
 		C267166A1C608972008ADFFC = {
 			isa = PBXGroup;
 			children = (
+				C289E3DA1C79582100D00987 /* Security.framework */,
 				C26716751C608972008ADFFC /* CrackDemo */,
 				C267168F1C608973008ADFFC /* CrackDemoTests */,
 				C267169A1C608973008ADFFC /* CrackDemoUITests */,
@@ -91,9 +102,9 @@
 		C26716741C608972008ADFFC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C26716731C608972008ADFFC /* CrackDemo.app */,
-				C267168C1C608973008ADFFC /* CrackDemoTests.xctest */,
-				C26716971C608973008ADFFC /* CrackDemoUITests.xctest */,
+				C26716731C608972008ADFFC /* RSADemo.app */,
+				C267168C1C608973008ADFFC /* RSADemo.xctest */,
+				C26716971C608973008ADFFC /* RSADemo.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +112,9 @@
 		C26716751C608972008ADFFC /* CrackDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C289E3DC1C795A6100D00987 /* p.p12 */,
+				C289E3DD1C795A6100D00987 /* rsacert.der */,
+				C289E3D61C79575200D00987 /* RSAEncryptor */,
 				C26716791C608972008ADFFC /* AppDelegate.h */,
 				C267167A1C608972008ADFFC /* AppDelegate.m */,
 				C267167C1C608972008ADFFC /* ViewController.h */,
@@ -140,12 +154,21 @@
 			path = CrackDemoUITests;
 			sourceTree = "<group>";
 		};
+		C289E3D61C79575200D00987 /* RSAEncryptor */ = {
+			isa = PBXGroup;
+			children = (
+				C289E3D71C79575200D00987 /* RSAEncryptor.h */,
+				C289E3D81C79575200D00987 /* RSAEncryptor.m */,
+			);
+			path = RSAEncryptor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C26716721C608972008ADFFC /* CrackDemo */ = {
+		C26716721C608972008ADFFC /* RSADemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C26716A01C608973008ADFFC /* Build configuration list for PBXNativeTarget "CrackDemo" */;
+			buildConfigurationList = C26716A01C608973008ADFFC /* Build configuration list for PBXNativeTarget "RSADemo" */;
 			buildPhases = (
 				C267166F1C608972008ADFFC /* Sources */,
 				C26716701C608972008ADFFC /* Frameworks */,
@@ -155,14 +178,14 @@
 			);
 			dependencies = (
 			);
-			name = CrackDemo;
+			name = RSADemo;
 			productName = CrackDemo;
-			productReference = C26716731C608972008ADFFC /* CrackDemo.app */;
+			productReference = C26716731C608972008ADFFC /* RSADemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C267168B1C608973008ADFFC /* CrackDemoTests */ = {
+		C267168B1C608973008ADFFC /* RSADemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C26716A31C608973008ADFFC /* Build configuration list for PBXNativeTarget "CrackDemoTests" */;
+			buildConfigurationList = C26716A31C608973008ADFFC /* Build configuration list for PBXNativeTarget "RSADemoTests" */;
 			buildPhases = (
 				C26716881C608973008ADFFC /* Sources */,
 				C26716891C608973008ADFFC /* Frameworks */,
@@ -173,14 +196,14 @@
 			dependencies = (
 				C267168E1C608973008ADFFC /* PBXTargetDependency */,
 			);
-			name = CrackDemoTests;
+			name = RSADemoTests;
 			productName = CrackDemoTests;
-			productReference = C267168C1C608973008ADFFC /* CrackDemoTests.xctest */;
+			productReference = C267168C1C608973008ADFFC /* RSADemo.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C26716961C608973008ADFFC /* CrackDemoUITests */ = {
+		C26716961C608973008ADFFC /* RSADemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C26716A61C608973008ADFFC /* Build configuration list for PBXNativeTarget "CrackDemoUITests" */;
+			buildConfigurationList = C26716A61C608973008ADFFC /* Build configuration list for PBXNativeTarget "RSADemoUITests" */;
 			buildPhases = (
 				C26716931C608973008ADFFC /* Sources */,
 				C26716941C608973008ADFFC /* Frameworks */,
@@ -191,9 +214,9 @@
 			dependencies = (
 				C26716991C608973008ADFFC /* PBXTargetDependency */,
 			);
-			name = CrackDemoUITests;
+			name = RSADemoUITests;
 			productName = CrackDemoUITests;
-			productReference = C26716971C608973008ADFFC /* CrackDemoUITests.xctest */;
+			productReference = C26716971C608973008ADFFC /* RSADemo.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +241,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C267166E1C608972008ADFFC /* Build configuration list for PBXProject "CrackDemo" */;
+			buildConfigurationList = C267166E1C608972008ADFFC /* Build configuration list for PBXProject "RSADemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -231,9 +254,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C26716721C608972008ADFFC /* CrackDemo */,
-				C267168B1C608973008ADFFC /* CrackDemoTests */,
-				C26716961C608973008ADFFC /* CrackDemoUITests */,
+				C26716721C608972008ADFFC /* RSADemo */,
+				C267168B1C608973008ADFFC /* RSADemoTests */,
+				C26716961C608973008ADFFC /* RSADemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,7 +268,9 @@
 			files = (
 				C26716861C608972008ADFFC /* LaunchScreen.storyboard in Resources */,
 				C26716831C608972008ADFFC /* Assets.xcassets in Resources */,
+				C289E3DE1C795A6100D00987 /* p.p12 in Resources */,
 				C26716811C608972008ADFFC /* Main.storyboard in Resources */,
+				C289E3DF1C795A6100D00987 /* rsacert.der in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C267167E1C608972008ADFFC /* ViewController.m in Sources */,
+				C289E3D91C79575200D00987 /* RSAEncryptor.m in Sources */,
 				C267167B1C608972008ADFFC /* AppDelegate.m in Sources */,
 				C26716781C608972008ADFFC /* main.m in Sources */,
 			);
@@ -297,12 +323,12 @@
 /* Begin PBXTargetDependency section */
 		C267168E1C608973008ADFFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C26716721C608972008ADFFC /* CrackDemo */;
+			target = C26716721C608972008ADFFC /* RSADemo */;
 			targetProxy = C267168D1C608973008ADFFC /* PBXContainerItemProxy */;
 		};
 		C26716991C608973008ADFFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C26716721C608972008ADFFC /* CrackDemo */;
+			target = C26716721C608972008ADFFC /* RSADemo */;
 			targetProxy = C26716981C608973008ADFFC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -414,7 +440,7 @@
 				INFOPLIST_FILE = CrackDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sumavision.CrackDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RSADemo;
 			};
 			name = Debug;
 		};
@@ -425,7 +451,7 @@
 				INFOPLIST_FILE = CrackDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sumavision.CrackDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RSADemo;
 			};
 			name = Release;
 		};
@@ -436,8 +462,8 @@
 				INFOPLIST_FILE = CrackDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sumavision.CrackDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrackDemo.app/CrackDemo";
+				PRODUCT_NAME = RSADemo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSADemo.app/RSADemo";
 			};
 			name = Debug;
 		};
@@ -448,8 +474,8 @@
 				INFOPLIST_FILE = CrackDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sumavision.CrackDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrackDemo.app/CrackDemo";
+				PRODUCT_NAME = RSADemo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSADemo.app/RSADemo";
 			};
 			name = Release;
 		};
@@ -459,7 +485,7 @@
 				INFOPLIST_FILE = CrackDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sumavision.CrackDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RSADemo;
 				TEST_TARGET_NAME = CrackDemo;
 				USES_XCTRUNNER = YES;
 			};
@@ -471,7 +497,7 @@
 				INFOPLIST_FILE = CrackDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sumavision.CrackDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = RSADemo;
 				TEST_TARGET_NAME = CrackDemo;
 				USES_XCTRUNNER = YES;
 			};
@@ -480,7 +506,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C267166E1C608972008ADFFC /* Build configuration list for PBXProject "CrackDemo" */ = {
+		C267166E1C608972008ADFFC /* Build configuration list for PBXProject "RSADemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C267169E1C608973008ADFFC /* Debug */,
@@ -489,29 +515,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C26716A01C608973008ADFFC /* Build configuration list for PBXNativeTarget "CrackDemo" */ = {
+		C26716A01C608973008ADFFC /* Build configuration list for PBXNativeTarget "RSADemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C26716A11C608973008ADFFC /* Debug */,
 				C26716A21C608973008ADFFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		C26716A31C608973008ADFFC /* Build configuration list for PBXNativeTarget "CrackDemoTests" */ = {
+		C26716A31C608973008ADFFC /* Build configuration list for PBXNativeTarget "RSADemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C26716A41C608973008ADFFC /* Debug */,
 				C26716A51C608973008ADFFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		C26716A61C608973008ADFFC /* Build configuration list for PBXNativeTarget "CrackDemoUITests" */ = {
+		C26716A61C608973008ADFFC /* Build configuration list for PBXNativeTarget "RSADemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C26716A71C608973008ADFFC /* Debug */,
 				C26716A81C608973008ADFFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

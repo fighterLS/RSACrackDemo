@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "RSAEncryptor.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    RSAEncryptor *rsa = [[RSAEncryptor alloc] init];
+    NSString *publicKeyPath = [[NSBundle mainBundle] pathForResource:@"rsacert" ofType:@"der"];
+    [rsa loadPublicKeyFromFile:publicKeyPath];
+    
+    NSString *securityText = @"hello ~";
+    NSString *encryptedString = [rsa rsaEncryptString:securityText];
+    NSLog(@"encrypted data: %@", encryptedString);
+    
+    //解密
+   // NSLog(@"decryptor using rsa");
+    [rsa loadPrivateKeyFromFile:[[NSBundle mainBundle] pathForResource:@"p" ofType:@"p12"] password:@"131623"];
+    NSString *decryptedString = [rsa rsaDecryptString:encryptedString];
+    NSLog(@"decrypted data: %@", decryptedString);
     // Do any additional setup after loading the view, typically from a nib.
 }
 
